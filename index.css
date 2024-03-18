@@ -181,14 +181,14 @@ img {
     color: gray;
 }
 
-.task-remove i {
-    cursor: pointer;
-}
-
-.task-remove i:hover {
+.task-remove:hover {
+    background-color: #dadcde;
+    border-radius: 100%;
     color: red;
+    cursor: pointer;
 }
 
 .task-finished {
     text-decoration: line-through;
+    color: #878787;
 }

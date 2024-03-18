@@ -15,10 +15,12 @@ function render(tasks) {
             }.png" alt="" />
           </div>
           <p class="task-content-text" >
-            <span class="${task.finished ? "task-finished" : ""}" onclick="handleCheck(${index})">${task.text}</span>
+            <span class="${
+              task.finished ? "task-finished" : ""
+            }" onclick="handleCheck(${index})">${task.text}</span>
           </p>
         </div>
-        <div class="task-remove"><i onclick="handleRemove(${index})" class="fa-solid fa-xmark"></i></div>
+        <div onclick="handleRemove(${index})" class="task-remove"><i class="fa-solid fa-xmark"></i></div>
       </div>`
     )
     .join("");
